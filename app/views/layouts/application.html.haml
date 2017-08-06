@@ -2,14 +2,19 @@
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title BryanTormey
-    %link{href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel: "stylesheet"}
-    %link{href:'https://fonts.googleapis.com/css?family=PT+Sans', rel:'stylesheet', type: 'text/css'}
+
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
     = google_webfonts_init({              |
         google: ['Works Sans', 'serif'] |
       })                                  |
+
+    %link{href: "//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel: "stylesheet"}
+    %link{href:'https://fonts.googleapis.com/css?family=PT+Sans', rel:'stylesheet', type: 'text/css'}
+    %link{href: "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css", rel: "stylesheet", type: "text/css"}
+    %script{src: "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", type: "text/javascript"}
+
   %body#main
     = yield
 

@@ -4,7 +4,7 @@ footer{
       li{
         float: left;
         list-style-type: none;
-        width: 49%;
+        width: 49.5%;
 
         a{
           color: #000;
@@ -24,6 +24,8 @@ footer{
 
         .email{
           text-align: left;
+          position: relative;
+          left: -40px;
         }
       }
     }
