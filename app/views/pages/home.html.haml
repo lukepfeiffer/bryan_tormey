@@ -3,15 +3,33 @@
 
   .images-container.scroller
     %div
-      .image= image_tag "https://cdn.pixabay.com/photo/2016/03/28/12/35/cat-1285634_960_720.png"
+      .image.double-image
+        %ul
+          %li= image_tag "double1-a.jpg"
+          %li= image_tag "double1-b.jpg"
     %div
-      .image= image_tag "https://www.w3schools.com/css/trolltunga.jpg"
+      .image.double-image
+        %ul
+          %li= image_tag "double2-a.jpg"
+          %li= image_tag "double2-b.jpg"
     %div
-      .image= image_tag "https://cdn.pixabay.com/photo/2016/03/28/12/35/cat-1285634_960_720.png"
+      .image.single-image= image_tag "single1.jpg"
     %div
-      .image= image_tag "https://www.w3schools.com/css/trolltunga.jpg"
+      .image.double-image
+        %ul
+          %li= image_tag "double3-a.jpg"
+          %li= image_tag "double3-b.jpg"
     %div
-      .image= image_tag "https://cdn.pixabay.com/photo/2016/03/28/12/35/cat-1285634_960_720.png"
+      .image.single-image= image_tag "single2.jpg"
     %div
-      .image= image_tag "https://www.w3schools.com/css/trolltunga.jpg"
+      .image.single-image= image_tag "single3.jpg"
+    %div
+      .image.single-image= image_tag "single4.jpg"
+    %div
+      .image.double-image
+        %ul
+          %li= image_tag "double4-a.jpg"
+          %li= image_tag "double4-b.jpg"
+    %div
+      .image.single-image= image_tag "single5.jpg"
   = render 'footer'

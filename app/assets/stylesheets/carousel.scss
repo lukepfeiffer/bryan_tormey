@@ -1,0 +1,23 @@
+.scroller{
+  .double-image{
+    position: relative;
+    left: -4vw;
+    ul{
+      li{
+        float: left;
+        list-style-type: none;
+        width: 50%;
+      }
+
+      img{
+        width: 100%;
+      }
+    }
+  }
+
+  .image{
+    img{
+      width: 50%;
+    }
+  }
+}
