@@ -1,0 +1,9 @@
+%h1 Images
+
+= form_for image do |f|
+  = f.label :title
+  = f.text_field :title
+
+  = f.label :image
+  = f.filestack_field :filepicker_url, "Select an image!"
+

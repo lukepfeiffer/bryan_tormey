@@ -3,11 +3,11 @@
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
     %title BryanTormey
 
+    = filestack_js_include_tag
+    = filestack_js_init_tag
     = stylesheet_link_tag    'application', media: 'all'
     = javascript_include_tag 'application'
     = csrf_meta_tags
-    = filestack_js_include_tag
-    = filestack_js_init_tag
     = google_webfonts_init({              |
         google: ['Works Sans', 'serif'] |
       })                                  |
