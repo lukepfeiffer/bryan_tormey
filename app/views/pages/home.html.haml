@@ -2,34 +2,8 @@
   %p.title Bryan Tormey
 
   .images-container.scroller
-    %div
-      .image.double-image
+    - images.each do |image|
+      .image.single-image
         %ul
-          %li= image_tag "double1-a.jpg"
-          %li= image_tag "double1-b.jpg"
-    %div
-      .image.double-image
-        %ul
-          %li= image_tag "double2-a.jpg"
-          %li= image_tag "double2-b.jpg"
-    %div
-      .image.single-image= image_tag "single1.jpg"
-    %div
-      .image.double-image
-        %ul
-          %li= image_tag "double3-a.jpg"
-          %li= image_tag "double3-b.jpg"
-    %div
-      .image.single-image= image_tag "single2.jpg"
-    %div
-      .image.single-image= image_tag "single3.jpg"
-    %div
-      .image.single-image= image_tag "single4.jpg"
-    %div
-      .image.double-image
-        %ul
-          %li= image_tag "double4-a.jpg"
-          %li= image_tag "double4-b.jpg"
-    %div
-      .image.single-image= image_tag "single5.jpg"
+          %li= filestack_image image.filepicker_url
   = render 'footer'
