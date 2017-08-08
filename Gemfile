@@ -4,8 +4,8 @@ ruby '2.3.3'
 gem 'adequate_exposure'
 gem 'authem'
 gem 'bcrypt-ruby', require: 'bcrypt'
-gem 'filepicker-rails'
 gem 'google-webfonts-rails'
+gem 'filestack-rails'
 gem 'haml-rails'
 gem 'jbuilder'
 gem 'jquery-rails'
@@ -19,6 +19,7 @@ gem 'uglifier'
 group :development, :test do
   gem 'pry-rails'
   gem 'web-console', '~> 2.0'
+  gem 'dotenv-rails'
 end
 
 group :development do
