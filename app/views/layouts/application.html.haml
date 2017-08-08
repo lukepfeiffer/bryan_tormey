@@ -17,6 +17,10 @@
     %link{href: "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css", rel: "stylesheet", type: "text/css"}
     %script{src: "//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js", type: "text/javascript"}
 
-  %body#main
-    = yield
+  - if @normal_view
+    %body.normal#main
+      = yield
+  - else
+    %body.admin#main
+      = yield
 

@@ -1,9 +1,21 @@
+@import "bourbon";
+@import "base/base";
+@import "neat";
 @import "footer";
 @import "home";
 @import "carousel";
+@import "images";
+@import "admin_nav";
+@import "panels";
+@import "forms";
 
 $default-font: "Works Sans", sans-serif;
 
 #main{
+  margin-top: 0;
   font-family: $default-font;
+}
+
+.admin{
+  background-color: #F7F6F3;
 }

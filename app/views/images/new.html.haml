@@ -1,0 +1,17 @@
+.images_screens
+  = render "admin_nav"
+  .panel.primary
+    .panel-header
+      %h1 New Image
+    .panel-body
+      = form_for image do |f|
+        %fieldset
+          %dl
+            %dt= f.label :title
+            = f.text_field :title
+
+            %dt= f.label :image
+            = f.filestack_field :filepicker_url, "Select an image", class: "filepicker"
+
+        %fieldset.actions
+          = f.submit "Add Image"
