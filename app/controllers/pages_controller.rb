@@ -6,4 +6,7 @@ class PagesController < ApplicationController
   def home
     @normal_view = true
   end
+
+  def sign_in
+  end
 end

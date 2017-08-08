@@ -1,0 +1,10 @@
+.images_screens
+  = render "admin_nav"
+  .panel.primary
+    .panel-header
+      %h1= image.title
+      %span.action-links
+        = link_to "Edit", edit_image_path(image.id), class: "edit"
+        = link_to "Delete", root_path, class: "danger"
+    .panel-body
+      = filestack_image image.filepicker_url

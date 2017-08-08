@@ -9,11 +9,12 @@
 @import "panels";
 @import "forms";
 @import "cards";
+@import "alerts";
 
 $default-font: "Works Sans", sans-serif;
 
 #main{
-  margin-top: 0;
+  margin: 0;
   font-family: $default-font;
 }
 
@@ -23,4 +24,38 @@ $default-font: "Works Sans", sans-serif;
 
 h1{
   font-size: 22px;
+}
+
+.action-links{
+  margin-left: 15px;
+  a{
+    padding: 0.5rem 1rem;
+    margin-right: 5px;
+    color: #fff;
+    border-radius: 0.25rem;
+  }
+
+  .danger{
+    background-color: #d9534f;
+    border: 1px solid #d9534f;
+  }
+
+  .view{
+    background-color: #5bc0de;
+    border: 1px solid #5bc0de;
+  }
+
+  .edit{
+    background-color: #f0ad4e;
+    border: 1px solid #f0ad4e;
+  }
+}
+
+.card-copy{
+  .action-links{
+    text-align: right;
+    a{
+      margin-left: 5px;
+    }
+  }
 }

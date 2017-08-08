@@ -1,4 +1,6 @@
 class ImagesController < ApplicationController
+  before_action :auth_user
+
   expose :image
   expose :images do
     Image.all
@@ -22,9 +24,28 @@ class ImagesController < ApplicationController
   end
 
   def update
+    if image.update(image_params)
+      flash[:success] = "Successfully updated image!"
+      redirect_to image_path(image.id)
+    else
+      flash[:danger] = "Something went wrong!"
+      render :edit
+    end
+  end
+
+  def destroy
+    image = Image.find(params[:id])
+    image.delete
+    redirect_to images_path
   end
 
   private
+  def auth_user
+    if current_user.nil?
+      flash[:danger] = "You do not have access!"
+      redirect_to root_path
+    end
+  end
 
   def image_params
     params.require(:image).permit(

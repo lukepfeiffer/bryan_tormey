@@ -19,8 +19,14 @@
 
   - if @normal_view
     %body.normal#main
+      .flash-messages
+        - flash.each do |key, value|
+          %div{ class: "alert alert-#{key}" }= value
       = yield
   - else
     %body.admin#main
+      .flash-messages
+        - flash.each do |key, value|
+          %div{ class: "alert alert-#{key}" }= value
       = yield
 

@@ -13,5 +13,7 @@
             .card-header
               %p= image.title
             .card-copy
-              = link_to "Delete", root_path, class: "danger"
-              = link_to "Edit", root_path, class: "edit"
+              .action-links
+                = link_to "View", image_path(image.id), class: "view"
+                = link_to "Edit", edit_image_path(image.id), class: "edit"
+                = link_to "Delete", image_path(image.id), method: :delete, class: "danger", data: {:confirm => ("Are you sure?" )}
