@@ -7,10 +7,15 @@ class ImagesController < ApplicationController
   def index
   end
 
-  def new
-  end
-
   def create
+    image = Image.new(image_params)
+    if image.save
+      flash[:success] = "Image created successfully!"
+      redirect_to images_path
+    else
+      flash[:danger] = "Something went wrong!"
+      render :new
+    end
   end
 
   def edit

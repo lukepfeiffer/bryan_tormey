@@ -1,3 +1,17 @@
 .images_screens
   = render "admin_nav"
-  %h1 Images
+  .panel.primary
+    .panel-header
+      %h1 Images
+
+    .panel-body
+      .cards
+        - images.each do |image|
+          .card
+            .card-image
+              = filestack_image image.filepicker_url
+            .card-header
+              %p= image.title
+            .card-copy
+              = link_to "Delete", root_path, class: "danger"
+              = link_to "Edit", root_path, class: "edit"

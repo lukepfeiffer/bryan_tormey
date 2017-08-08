@@ -8,6 +8,7 @@
 @import "admin_nav";
 @import "panels";
 @import "forms";
+@import "cards";
 
 $default-font: "Works Sans", sans-serif;
 
@@ -18,4 +19,8 @@ $default-font: "Works Sans", sans-serif;
 
 .admin{
   background-color: #F7F6F3;
+}
+
+h1{
+  font-size: 22px;
 }
