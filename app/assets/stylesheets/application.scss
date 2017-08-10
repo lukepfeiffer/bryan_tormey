@@ -11,7 +11,7 @@
 @import "cards";
 @import "alerts";
 
-$default-font: "Works Sans", sans-serif;
+$default-font: "Saira Condensed", sans-serif;
 
 #main{
   margin: 0;
@@ -29,7 +29,8 @@ h1{
 .action-links{
   margin-left: 15px;
   a{
-    padding: 0.5rem 1rem;
+    font-size: 18px;
+    padding: 0.25rem 1rem;
     margin-right: 5px;
     color: #fff;
     border-radius: 0.25rem;
