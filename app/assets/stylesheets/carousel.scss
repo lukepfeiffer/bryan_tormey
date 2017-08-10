@@ -1,14 +1,13 @@
 .scroller{
+  height: 500px;
   .double-image{
     ul{
       li{
         float: left;
         list-style-type: none;
-        width: 50%;
       }
 
       img{
-        width: 100%;
       }
     }
   }
