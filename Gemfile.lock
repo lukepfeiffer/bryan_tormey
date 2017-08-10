@@ -80,7 +80,6 @@ GEM
       rails (>= 4.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    google-webfonts-rails (0.0.1)
     haml (5.0.2)
       temple (>= 0.8.0)
       tilt
@@ -227,7 +226,6 @@ DEPENDENCIES
   bourbon (~> 4.2.0)
   dotenv-rails
   filestack-rails
-  google-webfonts-rails
   haml-rails
   jbuilder
   jquery-rails

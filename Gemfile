@@ -6,7 +6,6 @@ gem 'authem'
 gem 'bcrypt-ruby', require: 'bcrypt'
 gem 'bitters', '~> 1.2.0'
 gem 'bourbon', "~> 4.2.0"
-gem 'google-webfonts-rails'
 gem 'filestack-rails'
 gem 'haml-rails'
 gem 'jbuilder'
