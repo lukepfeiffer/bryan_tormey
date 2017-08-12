@@ -4,6 +4,10 @@
     margin-left: 15px;
     margin-bottom: 0;
     font-size: 18px;
+
+    @media only screen and (max-device-width: 768px) {
+      font-size: 25px;
+    }
   }
 
   .slick-slide{
@@ -14,8 +18,7 @@
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 3em;
-    max-height: 600px;
+    max-height: 900px;
 
     img{
       margin-left: auto;
