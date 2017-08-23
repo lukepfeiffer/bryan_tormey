@@ -5,8 +5,8 @@
     }
   }
 
-  @media only screen and (max-device-width: 1200px) {
-    margin-top: 30vh;
+  @media only screen and (min-device-height: 1000px) {
+    margin-top: 8.4vh;
     .image{
       img{
         width: 60%;
