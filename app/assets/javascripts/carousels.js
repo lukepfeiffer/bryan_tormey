@@ -13,12 +13,13 @@ $(document).ready(function() {
     switch(event.which){
       // Left arrow
       case 37:
-        $("scroller").slickPrev;
+        debugger
+        $(".scroller").slick("slickPrev");
       break;
 
       // Right arrow
       case 39:
-        $("scroller").slickNext;
+        $(".scroller").slick("slickNext");
       break;
     }
   });
