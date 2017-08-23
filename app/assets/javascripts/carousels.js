@@ -8,4 +8,18 @@ $(document).ready(function() {
     arrows: false,
     slidesToScroll: 1
   });
+
+  $(document).keydown(function(event){
+    switch(event.which){
+      // Left arrow
+      case 37:
+        $("scroller").slickPrev;
+      break;
+
+      // Right arrow
+      case 39:
+        $("scroller").slickNext;
+      break;
+    }
+  });
 });
