@@ -4,14 +4,10 @@
     margin-left: 15px;
     margin-bottom: 0;
     font-size: 18px;
-
-    @media only screen and (max-device-width: 768px) {
-      font-size: 25px;
-    }
   }
 
   .slick-slide{
-    max-height: 600px;
+    max-height: 40vw;
   }
 
   .images-container{
@@ -23,6 +19,17 @@
     img{
       margin-left: auto;
       margin-right: auto;
+    }
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  #home{
+    .title{
+      font-size: 25px;
+    }
+
+    .slick-slide{
+      max-height: 60vw;
     }
   }
 }

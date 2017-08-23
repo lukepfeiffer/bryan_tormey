@@ -16,6 +16,7 @@ $default-font: "Saira Condensed", sans-serif;
 #main{
   margin: 0;
   font-family: $default-font;
+  position: relative;
 }
 
 .admin{
