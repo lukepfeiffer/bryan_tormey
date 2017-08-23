@@ -9,11 +9,21 @@ $(document).ready(function() {
     slidesToScroll: 1
   });
 
+  $(".scroller").click(function(e){
+    var pWidth = $(this).innerWidth(); //use .outerWidth() if you want borders
+    var pOffset = $(this).offset();
+    var x = e.pageX - pOffset.left;
+    if(pWidth/2 > x) {
+      $(".scroller").slick("slickPrev");
+    } else {
+      $(".scroller").slick("slickNext");
+    }
+  });
+
   $(document).keydown(function(event){
     switch(event.which){
       // Left arrow
       case 37:
-        debugger
         $(".scroller").slick("slickPrev");
       break;
 
