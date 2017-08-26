@@ -20,6 +20,10 @@ $default-font: "Saira Condensed", sans-serif;
   height: 83%;
 }
 
+@media only screen and (max-device-width: 768px) {
+  height: 93%;
+}
+
 #main{
   margin: 0;
   font-family: $default-font;
