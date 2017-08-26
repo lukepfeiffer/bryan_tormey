@@ -21,7 +21,9 @@ $default-font: "Saira Condensed", sans-serif;
 }
 
 @media only screen and (max-device-width: 768px) {
-  height: 93%;
+  #home{
+    height: 93%;
+  }
 }
 
 #main{
