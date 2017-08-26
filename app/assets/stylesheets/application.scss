@@ -13,6 +13,13 @@
 
 $default-font: "Saira Condensed", sans-serif;
 
+#home{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 93%;
+}
+
 #main{
   margin: 0;
   font-family: $default-font;
@@ -60,4 +67,10 @@ h1{
       margin-left: 5px;
     }
   }
+}
+
+p.title{
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 0;
 }

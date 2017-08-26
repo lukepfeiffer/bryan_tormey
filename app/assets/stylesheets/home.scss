@@ -1,8 +1,5 @@
 #home{
   .title{
-    margin-top: 20px;
-    margin-left: 15px;
-    margin-bottom: 0;
     font-size: 18px;
   }
 
@@ -22,6 +19,7 @@
     }
   }
 }
+
 @media only screen and (max-device-width: 768px) {
   #home{
     .title{

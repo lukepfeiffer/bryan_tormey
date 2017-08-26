@@ -1,9 +1,10 @@
-#home
-  %p.title Bryan Tormey
+%p.title Bryan Tormey
 
+#home
   .images-container.scroller
     - images.each do |image|
       .image.single-image
         %ul
           %li= filestack_image image.filepicker_url
-  = render 'footer'
+
+= render 'footer'

@@ -3,7 +3,6 @@
 }
 
 .scroller{
-
   .image{
     img{
       width: 53%;
@@ -11,7 +10,6 @@
   }
 
   @media only screen and (min-device-height: 1000px) {
-    margin-top: 10.4vh;
     .image{
       img{
         width: 55%;
@@ -21,7 +19,6 @@
 
 
   @media only screen and (max-device-width: 1200px) {
-    margin-top: 30vh;
     .image{
       img{
         width: 60%;
@@ -31,8 +28,6 @@
 
   @media only screen and (max-device-width: 768px) {
     height: 800px;
-    margin-top: 35vw;
-
     .image{
       img{
         width: 80%;
