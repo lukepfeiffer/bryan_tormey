@@ -12,6 +12,9 @@
               = filestack_image image.filepicker_url
             .card-header
               %p= image.title
+              %p
+                Priority number:
+                = image.priority_number
             .card-copy
               .action-links
                 = link_to "View", image_path(image.id), class: "view"

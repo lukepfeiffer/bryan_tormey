@@ -3,7 +3,7 @@ class ImagesController < ApplicationController
 
   expose :image
   expose :images do
-    Image.all
+    Image.all.order('images.priority_number')
   end
 
   def index
@@ -50,7 +50,8 @@ class ImagesController < ApplicationController
   def image_params
     params.require(:image).permit(
       :title,
-      :filepicker_url
+      :filepicker_url,
+      :priority_number
     )
   end
 end

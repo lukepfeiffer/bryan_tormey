@@ -10,6 +10,9 @@
             %dt= f.label :title
             = f.text_field :title
 
+            %dt= f.label :priority_number
+            = f.number_field :priority_number
+
             %dt= f.label :image
             = f.filestack_field :filepicker_url, "Select an image", class: "filepicker"
 
