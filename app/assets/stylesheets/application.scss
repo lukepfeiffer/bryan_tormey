@@ -16,8 +16,8 @@ $default-font: "Saira Condensed", sans-serif;
 #home{
   display: flex;
   align-items: center;
-  justify-content: center;
-  height: 80vh;
+  // justify-content: center;
+  height: 80%;
 }
 
 @media only screen and (max-device-width: 768px) {
