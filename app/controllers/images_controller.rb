@@ -24,7 +24,8 @@ class ImagesController < ApplicationController
   end
 
   def update
-    if image.update(image_params)
+    image.update(image_params)
+    if image.save
       flash[:success] = "Successfully updated image!"
       redirect_to image_path(image.id)
     else
