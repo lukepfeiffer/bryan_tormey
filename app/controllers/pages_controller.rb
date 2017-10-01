@@ -1,6 +1,6 @@
 class PagesController < ApplicationController
   expose :images do
-    Image.all
+    Image.all.order('images.priority_number')
   end
 
   def home
