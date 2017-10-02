@@ -16,12 +16,15 @@ $default-font: "Saira Condensed", sans-serif;
 #home{
   display: flex;
   align-items: center;
+  align-items: center;
   // justify-content: center;
   height: 80%;
-}
 
-@media only screen and (max-device-width: 768px) {
-  #home{
+  @media only screen and (min-device-height: 1300px){
+    height: 90%;
+  }
+
+  @media only screen and (max-device-width: 768px) {
     height: 96%;
   }
 }
