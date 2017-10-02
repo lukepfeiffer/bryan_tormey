@@ -16,9 +16,27 @@
     margin-right: auto;
     max-height: 900px;
 
+    @media (max-aspect-ratio: 15/9){
+      max-height: 375px;
+    }
+
+    @media (max-aspect-ratio: 2/1){
+      max-height: 800px;
+    }
+
+
+    @media (max-aspect-ratio: 10/7){
+      max-height: 475px;
+    }
+
     img{
       margin-left: auto;
       margin-right: auto;
+
+      @media only screen and (max-device-width: 768px) {
+        width: 62%;
+      }
+
     }
   }
 }
