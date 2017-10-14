@@ -12,22 +12,10 @@
 
   .images-container{
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    max-height: 900px;
-
-    @media (max-aspect-ratio: 15/9){
-      max-height: 375px;
-    }
-
-    @media (max-aspect-ratio: 2/1){
-      max-height: 800px;
-    }
-
-
-    @media (max-aspect-ratio: 10/7){
-      max-height: 475px;
-    }
+    margin-top: 0 auto;
+    position: absolute;
+    top: 47%;
+    transform: translateY(-50%);
 
     img{
       margin-left: auto;
