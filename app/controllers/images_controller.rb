@@ -11,6 +11,7 @@ class ImagesController < ApplicationController
 
   def create
     image = Image.new(image_params)
+    Image.increment_following( params[:images][:priority_number] )
     if image.save
       flash[:success] = "Image created successfully!"
       redirect_to images_path
@@ -25,6 +26,7 @@ class ImagesController < ApplicationController
 
   def update
     image.update(image_params)
+    Image.increment_following( params[:images][:priority_number], image )
     if image.save
       flash[:success] = "Successfully updated image!"
       redirect_to image_path(image.id)
