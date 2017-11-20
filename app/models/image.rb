@@ -7,7 +7,7 @@ class Image < ActiveRecord::Base
     end
 
     images.each do |image_loop|
-      image_loop.update(priority_number: image.priority_number + 1)
+      image_loop.update(priority_number: image_loop.priority_number + 1)
     end
   end
 end
