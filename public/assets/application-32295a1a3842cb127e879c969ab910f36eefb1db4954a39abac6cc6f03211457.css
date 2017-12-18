@@ -1,0 +1,721 @@
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_buttons.scss */
+button, input[type="button"], input[type="reset"], input[type="submit"] {
+  appearance: none;
+  background-color: #1565c0;
+  border: 0;
+  border-radius: 3px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased;
+  font-weight: 600;
+  line-height: 1;
+  padding: 0.75em 1.5em;
+  text-decoration: none;
+  transition: background-color 150ms ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+/* line 21, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_buttons.scss */
+button:hover, button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #11519a;
+  color: #fff;
+}
+/* line 27, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_buttons.scss */
+button:disabled, input[type="button"]:disabled, input[type="reset"]:disabled, input[type="submit"]:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+/* line 31, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_buttons.scss */
+button:disabled:hover, input[type="button"]:disabled:hover, input[type="reset"]:disabled:hover, input[type="submit"]:disabled:hover {
+  background-color: #1565c0;
+}
+
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+fieldset {
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+legend {
+  font-weight: 600;
+  margin-bottom: 0.375em;
+  padding: 0;
+}
+
+/* line 14, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.375em;
+}
+
+/* line 20, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+input,
+select {
+  display: block;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+}
+
+/* line 27, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], input:not([type]), textarea,
+select[multiple] {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  margin-bottom: 0.75em;
+  padding: 0.5em;
+  transition: border-color 150ms ease;
+  width: 100%;
+}
+/* line 41, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, input:not([type]):hover, textarea:hover,
+select[multiple]:hover {
+  border-color: #b1b1b1;
+}
+/* line 45, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, input:not([type]):focus, textarea:focus,
+select[multiple]:focus {
+  border-color: #1565c0;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(18, 89, 169, 0.7);
+  outline: none;
+}
+/* line 51, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:disabled, input[type="date"]:disabled, input[type="datetime"]:disabled, input[type="datetime-local"]:disabled, input[type="email"]:disabled, input[type="month"]:disabled, input[type="number"]:disabled, input[type="password"]:disabled, input[type="search"]:disabled, input[type="tel"]:disabled, input[type="text"]:disabled, input[type="time"]:disabled, input[type="url"]:disabled, input[type="week"]:disabled, input:not([type]):disabled, textarea:disabled,
+select[multiple]:disabled {
+  background-color: #f2f2f2;
+  cursor: not-allowed;
+}
+/* line 55, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+input[type="color"]:disabled:hover, input[type="date"]:disabled:hover, input[type="datetime"]:disabled:hover, input[type="datetime-local"]:disabled:hover, input[type="email"]:disabled:hover, input[type="month"]:disabled:hover, input[type="number"]:disabled:hover, input[type="password"]:disabled:hover, input[type="search"]:disabled:hover, input[type="tel"]:disabled:hover, input[type="text"]:disabled:hover, input[type="time"]:disabled:hover, input[type="url"]:disabled:hover, input[type="week"]:disabled:hover, input:not([type]):disabled:hover, textarea:disabled:hover,
+select[multiple]:disabled:hover {
+  border: 1px solid #ddd;
+}
+
+/* line 61, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+textarea {
+  resize: vertical;
+}
+
+/* line 65, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+[type="search"] {
+  appearance: none;
+}
+
+/* line 69, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+[type="checkbox"],
+[type="radio"] {
+  display: inline;
+  margin-right: 0.375em;
+}
+
+/* line 75, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+[type="file"] {
+  margin-bottom: 0.75em;
+  width: 100%;
+}
+
+/* line 80, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_forms.scss */
+select {
+  margin-bottom: 1.5em;
+  max-width: 100%;
+  width: auto;
+}
+
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_lists.scss */
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 8, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_lists.scss */
+dl {
+  margin-bottom: 0.75em;
+}
+/* line 11, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_lists.scss */
+dl dt {
+  font-weight: 600;
+  margin-top: 0.75em;
+}
+/* line 16, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_lists.scss */
+dl dd {
+  margin: 0;
+}
+
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_tables.scss */
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* line 8, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_tables.scss */
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left;
+}
+
+/* line 15, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_tables.scss */
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0;
+}
+
+/* line 20, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_tables.scss */
+tr,
+td,
+th {
+  vertical-align: middle;
+}
+
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_typography.scss */
+body {
+  color: #333;
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* line 8, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_typography.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-size: 1em;
+  line-height: 1.2;
+  margin: 0 0 0.75em;
+}
+
+/* line 20, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_typography.scss */
+p {
+  margin: 0 0 0.75em;
+}
+
+/* line 24, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_typography.scss */
+a {
+  color: #1565c0;
+  text-decoration: none;
+  transition: color 150ms ease;
+}
+/* line 29, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_typography.scss */
+a:active, a:focus, a:hover {
+  color: #104c90;
+}
+
+/* line 36, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_typography.scss */
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0;
+}
+
+/* line 44, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/base/_typography.scss */
+img,
+picture {
+  margin: 0;
+  max-width: 100%;
+}
+
+/* line 4, /home/luke/.rvm/gems/ruby-2.4.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
+html {
+  box-sizing: border-box;
+}
+
+/* line 9, /home/luke/.rvm/gems/ruby-2.4.1/gems/neat-1.8.0/app/assets/stylesheets/grid/_box-sizing.scss */
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+/* line 9, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+footer .container ul li {
+  float: left;
+  list-style-type: none;
+  width: 49.5%;
+}
+/* line 14, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+footer .container ul li a {
+  color: #000;
+  display: block;
+  padding: 10px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+/* line 21, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+footer .container ul li a:hover {
+  cursor: pointer;
+}
+/* line 26, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+footer .container ul li .instagram {
+  text-align: right;
+  font-size: 20px;
+}
+/* line 30, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+footer .container ul li .instagram:hover {
+  cursor: default;
+}
+/* line 35, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+footer .container ul li .instagram .fa:hover {
+  cursor: pointer;
+  color: #4c68d7;
+}
+/* line 42, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+footer .container ul li .email {
+  font-size: 20px;
+  text-align: left;
+  position: relative;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 50, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+  footer .container ul li {
+    margin-top: 5em;
+  }
+  /* line 53, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+  footer .container ul li a .fa {
+    font-size: 25px;
+  }
+  /* line 58, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/footer.scss */
+  footer .container ul li .email {
+    font-size: 25px;
+  }
+}
+
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/home.scss */
+.title {
+  font-size: 18px;
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 0;
+}
+
+/* line 8, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/home.scss */
+#home {
+  height: 77%;
+  position: relative;
+}
+@media only screen and (min-device-height: 1300px) {
+  /* line 8, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/home.scss */
+  #home {
+    height: 90%;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 8, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/home.scss */
+  #home {
+    height: 96%;
+  }
+}
+/* line 23, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/home.scss */
+#home .images-container {
+  width: 80%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  transform: translate(12%, -30%);
+}
+/* line 31, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/home.scss */
+#home .images-container img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 31, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/home.scss */
+  #home .images-container img {
+    width: 62%;
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  /* line 45, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/home.scss */
+  .title {
+    font-size: 25px;
+  }
+
+  /* line 50, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/home.scss */
+  #home .slick-slide {
+    max-height: 60vw;
+  }
+}
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/carousel.scss */
+*:focus {
+  outline: none;
+}
+
+/* line 5, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/carousel.scss */
+.scroller {
+  margin-top: 2vw;
+}
+/* line 8, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/carousel.scss */
+.scroller .image img {
+  width: 53%;
+}
+@media only screen and (min-device-height: 1000px) {
+  /* line 15, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/carousel.scss */
+  .scroller .image img {
+    width: 55%;
+  }
+}
+@media only screen and (max-device-width: 1200px) {
+  /* line 24, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/carousel.scss */
+  .scroller .image img {
+    width: 60%;
+  }
+}
+@media only screen and (max-device-width: 768px) {
+  /* line 5, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/carousel.scss */
+  .scroller {
+    height: 800px;
+  }
+  /* line 33, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/carousel.scss */
+  .scroller .image img {
+    width: 80%;
+  }
+}
+
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/images.scss */
+.images_screens {
+  background-color: #fff;
+  width: 80%;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 3, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/admin_nav.scss */
+nav.admin {
+  background-color: #fff;
+}
+/* line 7, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/admin_nav.scss */
+nav.admin .container ul {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: center;
+}
+/* line 21, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/admin_nav.scss */
+nav.admin .container ul li {
+  list-style-type: none;
+  width: 200px;
+  text-align: center;
+}
+/* line 26, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/admin_nav.scss */
+nav.admin .container ul li a {
+  font-size: 22px;
+  color: #1565c0;
+  display: block;
+  padding: 16px 0;
+  text-decoration: none;
+}
+/* line 33, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/admin_nav.scss */
+nav.admin .container ul li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 1em;
+}
+/* line 5, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel .panel-header {
+  background-color: #f5f5f5;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+  color: #333;
+  margin-bottom: 10px;
+}
+/* line 13, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel .panel-header h1 {
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 0.6em;
+  margin-bottom: 0;
+}
+/* line 20, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel .panel-header .edit-panel {
+  margin-bottom: 10px;
+  margin-left: 10px;
+}
+/* line 26, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel .panel-body {
+  margin: 0 10px 20px 10px;
+  text-align: left;
+}
+/* line 30, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel .panel-body li {
+  font-size: 20px;
+}
+/* line 36, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel .panel-body li:last-of-type {
+  margin-bottom: 30px;
+}
+
+/* line 42, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel.default {
+  border: 1px solid #ddd;
+}
+/* line 44, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel.default .panel-header {
+  border-bottom-color: #ddd;
+  background-color: #f5f5f5;
+  color: #333;
+}
+/* line 49, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel.default .panel-header h1 {
+  margin-top: 10px;
+}
+
+/* line 55, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel.primary {
+  border: 1px solid #bce8f1;
+}
+/* line 57, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel.primary .panel-header {
+  border-bottom-color: #bce8f1;
+  background-color: #d9edf7;
+  color: #31708f;
+}
+
+/* line 64, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel.warning {
+  border: 1px solid #fcf8e3;
+}
+/* line 66, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/panels.scss */
+.panel.warning .panel-header {
+  color: #8a6d3b;
+  background-color: #faebcc;
+  border-bottom-color: #faebcc;
+}
+
+/* line 2, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/forms.scss */
+form fieldset {
+  border: none;
+}
+/* line 5, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/forms.scss */
+form fieldset .filepicker {
+  background-color: #ffa500;
+}
+
+/* line 1, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/cards.scss */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+/* line 7, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/cards.scss */
+.card {
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px #e6e6e6;
+  margin: 0 1em 1.5em 1em;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  width: 30%;
+}
+/* line 32, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/cards.scss */
+.card .card-image {
+  overflow: hidden;
+}
+/* line 37, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/cards.scss */
+.card .card-image img {
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+}
+/* line 45, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/cards.scss */
+.card .card-header {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+  border-radius: 3px 3px 0 0;
+  font-weight: bold;
+  line-height: 1.5em;
+  padding: 0.5em 0.75em;
+  transition: all 0.2s ease-in-out;
+}
+/* line 55, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/cards.scss */
+.card .card-copy {
+  font-size: 0.9em;
+  line-height: 1.5em;
+  padding: 0.75em 0.75em;
+}
+/* line 60, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/cards.scss */
+.card .card-copy p {
+  margin: 0 0 0.75em;
+}
+/* line 65, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/cards.scss */
+.card:active {
+  background-color: #f7f7f7;
+}
+/* line 68, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/cards.scss */
+.card:active .card-header {
+  background-color: #f7f7f7;
+}
+
+/* line 10, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-error {
+  background-color: #fff6bf;
+  color: #66624c;
+  display: block;
+  padding: 0.75em;
+  text-align: center;
+}
+/* line 17, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-error a {
+  color: #4d4a39;
+  text-decoration: underline;
+}
+/* line 21, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-error a:focus, .alert-error a:hover {
+  color: #1a1913;
+}
+
+/* line 10, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-danger {
+  background-color: #fbe3e4;
+  color: #645b5b;
+  display: block;
+  padding: 0.75em;
+  text-align: center;
+}
+/* line 17, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-danger a {
+  color: #4b4444;
+  text-decoration: underline;
+}
+/* line 21, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-danger a:focus, .alert-danger a:hover {
+  color: #191717;
+}
+
+/* line 10, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-notice {
+  background-color: #e5edf8;
+  color: #5c5f63;
+  display: block;
+  padding: 0.75em;
+  text-align: center;
+}
+/* line 17, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-notice a {
+  color: #45474a;
+  text-decoration: underline;
+}
+/* line 21, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-notice a:focus, .alert-notice a:hover {
+  color: #171819;
+}
+
+/* line 10, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-success {
+  background-color: #e6efc2;
+  color: #5c604e;
+  display: block;
+  padding: 0.75em;
+  text-align: center;
+}
+/* line 17, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-success a {
+  color: #45483a;
+  text-decoration: underline;
+}
+/* line 21, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/alerts.css.scss */
+.alert-success a:focus, .alert-success a:hover {
+  color: #171813;
+}
+
+/* line 19, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+#main {
+  margin: 0;
+  font-family: "Saira Condensed", sans-serif;
+  position: relative;
+  overflow-y: hidden;
+}
+
+/* line 26, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+.admin {
+  background-color: #F7F6F3;
+}
+
+/* line 30, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+h1 {
+  font-size: 22px;
+}
+
+/* line 34, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+.action-links {
+  margin-left: 15px;
+}
+/* line 36, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+.action-links a {
+  font-size: 18px;
+  padding: 0.25rem 1rem;
+  margin-right: 5px;
+  color: #fff;
+  border-radius: 0.25rem;
+}
+/* line 44, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+.action-links .danger {
+  background-color: #d9534f;
+  border: 1px solid #d9534f;
+}
+/* line 49, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+.action-links .view {
+  background-color: #5bc0de;
+  border: 1px solid #5bc0de;
+}
+/* line 54, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+.action-links .edit {
+  background-color: #f0ad4e;
+  border: 1px solid #f0ad4e;
+}
+
+/* line 61, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+.card-copy .action-links {
+  text-align: right;
+}
+/* line 63, /home/luke/hashrocket/bryan_tormey/app/assets/stylesheets/application.scss */
+.card-copy .action-links a {
+  margin-left: 5px;
+}
