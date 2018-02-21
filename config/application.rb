@@ -30,6 +30,5 @@ module BryanTormey
     # config.i18n.default_locale = :de
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
-    config.filestack_rails.api_key = ENV['FILEPICKER_KEY']
   end
 end
