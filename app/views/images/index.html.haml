@@ -9,7 +9,8 @@
         - images.each do |image|
           .card
             .card-image
-              = image_tag image.image_url
+              - if image.image_url
+                = image_tag image.image_url
             .card-header
               %p= image.title
               %p

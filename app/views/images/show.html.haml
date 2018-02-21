@@ -7,7 +7,8 @@
         = link_to "Edit", edit_image_path(image.id), class: "edit"
         = link_to "Delete", root_path, class: "danger"
     .panel-body
-      = image_tag image.image_url
+      - if image.image_url
+        = image_tag image.image_url
       %p
         Priority number:
         = image.priority_number

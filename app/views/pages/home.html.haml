@@ -5,6 +5,10 @@
     - images.each do |image|
       .image.single-image
         %ul
-          %li= image_tag(image.image_url)
+          - if image.image_url
+            %li= image_tag(image.image_url)
+          - else
+            %li
+              %img{src: "/", alt: "Something went wrong..."}
 
 = render 'footer'
