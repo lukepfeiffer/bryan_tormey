@@ -14,7 +14,7 @@
             = f.number_field :priority_number
 
             %dt= f.label :image
-            = f.filestack_field :filepicker_url, "Select an image", class: "filepicker"
+            = f.text_field :image_url, placeholder: "http://someimage.com/image.png"
 
         %fieldset.actions
           = f.submit "Save"

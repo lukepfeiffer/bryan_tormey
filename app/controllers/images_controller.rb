@@ -52,7 +52,7 @@ class ImagesController < ApplicationController
   def image_params
     params.require(:image).permit(
       :title,
-      :filepicker_url,
+      :image_url,
       :priority_number
     )
   end

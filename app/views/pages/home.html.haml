@@ -5,6 +5,6 @@
     - images.each do |image|
       .image.single-image
         %ul
-          %li= filestack_image image.filepicker_url
+          %li= image_tag(image.image_url)
 
 = render 'footer'
