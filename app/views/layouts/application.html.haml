@@ -17,7 +17,7 @@
 
 
   - if @normal_view
-    %body.normal#main
+    %body.normal#main.hide-scroll
       .flash-messages
         - flash.each do |key, value|
           %div{ class: "alert alert-#{key}" }= value

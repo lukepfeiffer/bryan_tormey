@@ -1,5 +1,5 @@
 class ImagesController < ApplicationController
-  # before_action :auth_user
+  before_action :auth_user
 
   expose :image
   expose :images do

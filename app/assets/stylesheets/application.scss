@@ -16,11 +16,17 @@ $default-font: "Saira Condensed", sans-serif;
 #home{
 }
 
-#main{
+#main.hide-scroll{
   margin: 0;
   font-family: $default-font;
   position: relative;
   overflow-y: hidden;
+}
+
+#main{
+  margin: 0;
+  font-family: $default-font;
+  position: relative;
 }
 
 .admin{
